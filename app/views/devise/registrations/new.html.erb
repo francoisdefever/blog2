@@ -7,10 +7,12 @@
     <%= f.label :username %><br>
     <%= f.text_field :username %>
   </div>
-  <div class="field">
-    <%= f.label :avatar %><br>
-    <%= f.text_field :avatar %>
-  </div>
+
+    <div class="field">
+     <%= f.file_field :avatar %>
+     <%= f.hidden_field :avatar_cache %>
+     </div>
+
 
   <div class="field">
     <%= f.label :email %><br />
